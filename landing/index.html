@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOOFARS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="bootstrap-3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/login.css" />
+	<script type="text/javascript" src="javascript/modal.js"></script>
+
+</head>
+<body>
+<div id="main">
+		<img src="images/back.jpg">
+		<div id="black"></div>
+		<div class="heading">
+			<h1 >Welcome To Hoofars</h1>
+			<h2>The First Professional Network Dedicated Exclusively Towards Artists.</h2>
+			<button type="button" id="signup" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#signupModal1"><span class="glyphicon glyphicon-user"></span> Sign Up</button>
+			<div id="login">
+				Already a Hoofar! 
+				<a href="#" data-toggle="modal" data-target="#loginModal">Log in now.</a>
+			</div>
+		</div>
+</div>
+
+<!--....Login Modal .....-->
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<p id="loginheader">Log In</p>
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="notMember">
+						Not a member? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModal1">Sign Up</a>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Password">
+					</div>
+				</form>
+				<input class="RememberMe" type="checkbox"> <p class="RememberMe">Remember me</p>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+				<button class="btn btn-success btn-block" type="submit">Log In</button>
+			</div>
+
+			<div class="modal-footer">
+				<p id="or">OR</p>
+				<a class="btn btn-block btn-social btn-facebook">
+            		<span class="fa fa-facebook" ></span> Sign in with Facebook</a>
+            	<a class="btn btn-block btn-social btn-google">
+            		<span class="fa fa-google" ></span> Sign in with Google</a>
+            	<a class="btn btn-block btn-social btn-twitter">
+            		<span class="fa fa-twitter" ></span> Sign in with Twitter</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--....Signup 1 Modal .....-->
+<div class="modal fade" id="signupModal1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Create Account</h3>
+
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="notMember">
+						Already a member? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Log In</a>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Enter Firstname">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Enter Lastname">
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Enter Email">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Type Password">
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" placeholder="Type Password Again">
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-primary btn-block" data-dismiss="modal" data-toggle="modal" data-target="#signupModal2">Continue</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--....Signup 2 Modal .....-->
+<div class="modal fade" id="signupModal2">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Create Account</h3>
+
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					
+					<h4>Gender</h4>
+					<div class="radio">
+						<label><input input type="radio" name="optradio">Male</label>
+						<label><input input type="radio" name="optradio">Female</label>
+					</div>
+					<div class="form-group">
+						<input type="number" class="form-control" placeholder="Enter Age">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Enter Country">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Type City">
+					</div>
+					<h4>Category</h4>
+					<button class="btn btn-primary category" data-dismiss="modal" data-toggle="modal" data-target="#artistmodal">Artist</button>
+					<button class="btn btn-success category" data-dismiss="modal" data-toggle="modal" data-target="#corporatemodal">Corporate</button>
+					<button class="btn btn-danger category" data-dismiss="modal" data-toggle="modal" data-target="#nonemodal">None</button>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning btn-block" data-dismiss="modal" data-toggle="modal" data-target="#signupModal1">Back</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--.......Artist Modal.........-->
+<div class="modal fade" id="artistmodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Which type of artist you are ?</h3>
+			</div>
+
+			<div class="modal-body">
+				<label class="checkbox-inline"><input type="checkbox" id="musician" value="">Musician</label>
+				<label class="checkbox-inline"><input type="checkbox" id="dancer" value="">Dancer</label>
+				<label class="checkbox-inline"><input type="checkbox" id="model" value="">Model</label>
+				<label class="checkbox-inline"><input type="checkbox" id="all" value="">All</label>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#signupModal2">Back</button>
+				<button id="artist-next" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="">Next</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!--.........Music Details.............-->
+<div class="modal fade" id="music-details" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Details In Music</h3>
+			</div>
+
+			<div class="modal-body">
+
+					<div class="form-group">
+						<label><b>Music Forte</b></label>
+						<input type="text" class="form-control" placeholder="Enter Music Forte">
+					</div>
+					<div class="form-group">
+						<label><b>Training</b></label>
+						<input type="text" class="form-control" placeholder="Training Taken From">
+					</div>
+					<div class="form-group">
+						<label><b>Education</b></label>
+						<input type="text" class="form-control" placeholder="Enter Educational Qualifications">
+					</div>
+					<div class="form-group">
+						<div class="dropdown">
+							<label><b>Work Experience</b></label><br>
+		  					<button class="btn btn-default dropdown-toggle" type="button" id="work-exp" data-toggle="dropdown" aria-haspopup="true">Select <span class="caret"></span>
+		  					</button>
+		  					<ul class="dropdown-menu" id="work-exp" aria-labelledby="music-work-exp">
+							    <li><a href="#" data-value="music-exp1">0 to 1 year</a></li>
+							    <li><a href="#" data-value="music-exp2">1 to 2 years</a></li>
+							    <li><a href="#" data-value="music-exp5">2 to 5 years</a></li>
+							    <li><a href="#" data-value="music-exp10">5 to 10 years</a></li>
+							    <li><a href="#" data-value="music-more">More than 10 years</a></li>
+		  					</ul>
+						</div>
+					</div>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#artistmodal">Back</button>
+				<button class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#music-achievements">Skip</button>
+				<button class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#music-achievements">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--.........Music Achievements.............-->
+<div class="modal fade" id="music-achievements" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Achievements In Music</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label><b>Expertise Level</b></label>
+					<input type="text" class="form-control" placeholder="Enter Expertise Level">
+				</div>
+				<div class="form-group">
+					<label><b>Number Of Competitions Participated In</b></label>
+					<input type="number" class="form-control" placeholder="Enter Number Of Competitions Participated In">
+				</div>
+				<div class="form-group">
+					<label><b>Number Of Competitions Won</b></label>
+					<input type="number" class="form-control" placeholder="Enter Number Of Competitions Won">
+				</div>
+				<div class="form-group">
+					<label><b>Languages Known</b></label>
+					<input type="text" class="form-control" placeholder="Languages Known">
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#music-details">Back</button>
+				<button class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#music-upload">Skip</button>
+				<button class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#music-upload">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--.........Music Upload............-->
+<div class="modal fade" id="music-upload" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Upload Content In Music</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label>My Story Video        <button class="btn btn-default upload">Upload</button></label><hr>
+				</div>
+				<div class="form-group">
+					<label>Upload Working Audio</label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Audio 1</button>
+						<button type="button" class="btn btn-default">Audio 2</button>
+						<button type="button" class="btn btn-default">Audio 3</button>
+						<button type="button" class="btn btn-default">Audio 4</button>
+						<button type="button" class="btn btn-default">Audio 5</button>
+					</div>
+					<hr>
+				</div>
+				<div class="form-group">
+					<label>Profile Photo        <button class="btn btn-default upload">Upload</button></label><hr>
+				</div>
+				<div class="form-group">
+					<label>Cover Photo          <button class="btn btn-default upload">Upload</button></label>
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#music-achievements">Back</button>
+				<button  id="music-next" class="btn btn-success" data-dismiss="modal"  data-toggle="modal" data-target="#">Skip</button>
+				<button  id="music-next" class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#">Create Portfolio</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--.........Dance Details.............-->
+<div class="modal fade" id="dance-details" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Details In Dance</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label><b>Dance Forte</b></label>
+					<input type="text" class="form-control" placeholder="Enter Dance Forte">
+				</div>
+				<div class="form-group">
+					<label><b>Training</b></label>
+					<input type="text" class="form-control" placeholder="Training Taken From">
+				</div>
+				<div class="form-group">
+					<label><b>Education</b></label>
+					<input type="text" class="form-control" placeholder="Enter Educational Qualifications">
+				</div>
+				<div class="form-group">
+					<div class="dropdown">
+						<label><b>Work Experience</b></label><br>
+	  					<button class="btn btn-default dropdown-toggle" type="button" id="work-exp" data-toggle="dropdown" aria-haspopup="true">Select <span class="caret"></span>
+	  					</button>
+	  					<ul class="dropdown-menu" aria-labelledby="work-exp">
+						    <li><a href="#" data-value="dance-exp1">0 to 1 year</a></li>
+						    <li><a href="#" data-value="dance-exp2">1 to 2 years</a></li>
+						    <li><a href="#" data-value="dance-exp5">2 to 5 years</a></li>
+						    <li><a href="#" data-value="dance-exp10">5 to 10 years</a></li>
+						    <li><a href="#" data-value="dance-more">More than 10 years</a></li>
+	  					</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#artistmodal">Back</button>
+				<button class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#dance-achievements">Skip</button>
+				<button class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#dance-achievements">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--.........Dance Achievements.............-->
+<div class="modal fade" id="dance-achievements" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Achievements In Dance</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label><b>Expertise Level</b></label>
+					<input type="text" class="form-control" placeholder="Enter Expertise Level">
+				</div>
+				<div class="form-group">
+					<label><b>Number Of Competitions Participated In</b></label>
+					<input type="number" class="form-control" placeholder="Enter Number Of Competitions Participated In">
+				</div>
+				<div class="form-group">
+					<label><b>Number Of Competitions Won</b></label>
+					<input type="number" class="form-control" placeholder="Enter Number Of Competitions Won">
+				</div>
+				<div class="form-group">
+					<label><b>Languages Known</b></label>
+					<input type="text" class="form-control" placeholder="Languages Known">
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#dance-details">Back</button>
+				<button class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#dance-upload">Skip</button>
+				<button class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#dance-upload">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--.........Dance Upload.............-->
+<div class="modal fade" id="dance-upload" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Upload Content In Dance</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label>My Story Video        <button class="btn btn-default upload">Upload</button></label><hr>
+				</div>
+				<div class="form-group">
+					<label>Upload Working Video</label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Video 1</button>
+						<button type="button" class="btn btn-default">Video 2</button>
+						<button type="button" class="btn btn-default">Video 3</button>
+						<button type="button" class="btn btn-default">Video 4</button>
+						<button type="button" class="btn btn-default">Video 5</button>
+					</div>
+					<hr>
+				</div>
+				<div class="form-group">
+					<label>Profile Photo        <button class="btn btn-default upload">Upload</button></label><hr>
+				</div>
+				<div class="form-group">
+					<label>Cover Photo          <button class="btn btn-default upload">Upload</button></label>
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#dance-achievements">Back</button>
+				<button  id="music-next" class="btn btn-success" data-dismiss="modal"  data-toggle="modal" data-target="#">Skip</button>
+				<button  class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#">Create Portfolio</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--.........Model Details.............-->
+<div class="modal fade" id="model-details" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Details In Fashion</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label><b>Model Forte</b></label>
+					<input type="text" class="form-control" placeholder="Enter Model Forte">
+				</div>
+				<div class="form-group">
+					<label><b>Training</b></label>
+					<input type="text" class="form-control" placeholder="Training Taken From">
+				</div>
+				<div class="form-group">
+					<label><b>Education</b></label>
+					<input type="text" class="form-control" placeholder="Enter Educational Qualifications">
+				</div>
+				<div class="form-group">
+					<div class="dropdown">
+						<label><b>Work Experience</b></label><br>
+	  					<button class="btn btn-default dropdown-toggle" type="button" id="work-exp" data-toggle="dropdown" aria-haspopup="true">Select <span class="caret"></span>
+	  					</button>
+	  					<ul class="dropdown-menu" aria-labelledby="work-exp">
+						    <li><a href="#" data-value="model-exp1">0 to 1 year</a></li>
+						    <li><a href="#" data-value="model-exp2">1 to 2 years</a></li>
+						    <li><a href="#" data-value="model-exp5">2 to 5 years</a></li>
+						    <li><a href="#" data-value="model-exp10">5 to 10 years</a></li>
+						    <li><a href="#" data-value="model-more">More than 10 years</a></li>
+	  					</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#artistmodal">Back</button>
+				<button class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#model-measure">Skip</button>
+				<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#model-measure">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--.........Model Measurements.............-->
+<div class="modal fade" id="model-measure" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Measurements</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label><b>Height (cm)</b></label>
+					<input type="text" class="form-control" placeholder="">
+				</div>
+				<div class="form-group">
+					<label><b>Weight</b></label>
+					<input type="text" class="form-control" placeholder="">
+				</div>
+				<div class="form-group">
+					<label><b>Chest(or breast)</b></label>
+					<input type="text" class="form-control" placeholder="">
+				</div>
+				<div class="form-group">
+					<label><b>Waist</b></label>
+					<input type="text" class="form-control" placeholder="">
+				</div>
+				<div class="form-group">
+					<label><b>Hips</b></label>
+					<input type="text" class="form-control" placeholder="">
+				</div>
+				<div class="form-group">
+					<div class="dropdown">
+						<label><b>Eye Color</b></label><br>
+	  					<button class="btn btn-default dropdown-toggle" type="button" id="eye-color" data-toggle="dropdown" aria-haspopup="true">Eye Color <span class="caret"></span>
+	  					</button>
+	  					<ul class="dropdown-menu" aria-labelledby="eye-color">
+						    <li><a href="#" data-value="black">Black</a></li>
+						    <li><a href="#" data-value="light-brown">Light Brown</a></li>
+						    <li><a href="#" data-value="dark-brown">Dark Brown</a></li>
+						    <li><a href="#" data-value="blue">Blue</a></li>
+						    <li><a href="#" data-value="green">Green</a></li>
+						    <li><a href="#" data-value="grey">Grey</a></li>
+	  					</ul>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="dropdown">
+						<label><b>Hair Color</b></label><br>
+	  					<button class="btn btn-default dropdown-toggle" type="button" id="hair-color" data-toggle="dropdown" aria-haspopup="true">Hair Color <span class="caret"></span>
+	  					</button>
+	  					<ul class="dropdown-menu" aria-labelledby="hair-color">
+						    <li><a href="#" data-value="blonde">Blonde</a></li>
+						    <li><a href="#" data-value="light-brown">Light Brown</a></li>
+						    <li><a href="#" data-value="dark-brown">Dark Brown</a></li>
+						    <li><a href="#" data-value="red">Red</a></li>
+						    <li><a href="#" data-value="grey">Grey</a></li>
+						    <li><a href="#" data-value="black">Black</a></li>
+						    <li><a href="#" data-value="other">Other</a></li>
+	  					</ul>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label><b>Shoe Size</b></label>
+					<input type="text" class="form-control" placeholder="">
+				</div>
+				<div class="form-group">
+					<label><b>Cup Size (Female)</b></label>
+					<input type="text" class="form-control" placeholder="">
+				</div>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#model-details">Back</button>
+				<button class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#model-achievements">Skip</button>
+				<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#model-achievements">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--.........Model Achievements.............-->
+<div class="modal fade" id="model-achievements" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Achievements In Fashion</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label><b>Expertise Level</b></label>
+					<input type="text" class="form-control" placeholder="Enter Expertise Level">
+				</div>
+				<div class="form-group">
+					<label><b>Number Of Competitions Participated In</b></label>
+					<input type="number" class="form-control" placeholder="Enter Number Of Competitions Participated In">
+				</div>
+				<div class="form-group">
+					<label><b>Number Of Competitions Won</b></label>
+					<input type="number" class="form-control" placeholder="Enter Number Of Competitions Won">
+				</div>
+				<div class="form-group">
+					<label><b>Languages Known</b></label>
+					<input type="text" class="form-control" placeholder="Languages Known">
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#model-measure">Back</button>
+				<button class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#model-upload">Skip</button>
+				<button class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#model-upload">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--.........Model Upload.............-->
+<div class="modal fade" id="model-upload" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Upload Content In Fashion</h3>
+			</div>
+
+			<div class="modal-body">
+
+				<div class="form-group">
+					<label>My Story Video        <button class="btn btn-default upload">Upload</button></label><hr>
+				</div>
+				<div class="form-group">
+					<label>Upload Working Video</label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Video 1</button>
+						<button type="button" class="btn btn-default">Video 2</button>
+						<button type="button" class="btn btn-default">Video 3</button>
+						<button type="button" class="btn btn-default">Video 4</button>
+						<button type="button" class="btn btn-default">Video 5</button>
+					</div>
+					<hr>
+				</div>
+				<div class="form-group">
+					<label>Upload Photographs</label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Photo 1</button>
+						<button type="button" class="btn btn-default">Photo 2</button>
+						<button type="button" class="btn btn-default">Photo 3</button>
+						<button type="button" class="btn btn-default">Photo 4</button>
+						<button type="button" class="btn btn-default">Photo 5</button>
+					</div>
+					<hr>
+				</div>
+				<div class="form-group">
+					<label>Profile Photo        <button class="btn btn-default upload">Upload</button></label><hr>
+				</div>
+				<div class="form-group">
+					<label>Cover Photo          <button class="btn btn-default upload">Upload</button></label>
+				</div>
+
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#model-achievements">Back</button>
+				<button  id="music-next" class="btn btn-success" data-dismiss="modal"  data-toggle="modal" data-target="#">Skip</button>
+				<button  id="music-next" class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#">Create Portfolio</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--.......Corporate Modal.........-->
+<div class="modal fade" id="corporatemodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Company Details</h3>
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Enter Company Name">
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Enter Company Email">
+					</div>
+					<div class="form-group">
+						<input type="number" class="form-control" placeholder="Enter Company Phone">
+					</div>
+					<h4>Interested in </h4>
+						<label class="checkbox-inline"><input type="checkbox" value="">Music</label>
+						<label class="checkbox-inline"><input type="checkbox" value="">Dance</label>
+						<label class="checkbox-inline"><input type="checkbox" value="">Modelling</label>
+					
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#signupModal2">		Back</button>
+				<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#">Create Account</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<!--.......NONE Modal.........-->
+<div class="modal fade" id="nonemodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>Are you sure ?</h3>
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					<button class="btn btn-warning back" data-dismiss="modal" data-toggle="modal" data-target="#signupModal2">
+						No</button>
+					<button class="btn btn-primary " data-dismiss="modal" data-toggle="modal" data-target="#">Yes, Create Account</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</body>
+<html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Corporate</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="corporate.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  
+  
+    </head>
+<body>
+
+<nav class="navbar navbar-default header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" id="logo" class="img-responsive"/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control search" placeholder="Search hoopars" size="35">
+          <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+        </div>
+        
+      </form>
+        
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><img src="images/DP.jpg" class="img-responsive hf-img"></a></li>
+          <li><a href="#"><img src="images/DP.jpg" class="img-responsive hf-img"></a></li>
+          <li><a href="#"><img src="images/DP.jpg" class="img-responsive hf-img"></a></li>
+          <li id="faces">Hoofars faces</li>
+          <li><a href="#"><img src="images/DP.jpg" class="img-responsive prf-img"></a></li>
+        <li><a href="#">Ashley</a></li>
+          <li id="home"><a href="#">Home</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-bell size"></span></a></li>
+          
+          
+          
+          
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+	<div class="row">
+	   <div class="cover">
+  			<div class="rep">
+      			<h1>Ubisoft</h1>
+      			<h2>Pvt.Ltd.</h2>
+    		</div>
+			<div class="col-sm-4">	
+  				<div class="profile-photo">  
+     				<img src="images/DP.jpg" class="img-responsive" id="dp">
+  				</div>
+  			</div>	
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row space">
+  		<div class="col-sm-4">
+  			<div class="info">
+				<div class="content" data-toggle="modal" data-target="#recruit">
+   					<img src="images/recruit.png" class="content-img">
+  				</div>
+				<p >Explore And Recruit Talent</p>
+			</div>
+		</div>
+
+		<div class="col-sm-4">
+  			<div class="info">
+				<div class="content" data-toggle="modal" data-target="#post-job-plans">
+   					<img src="images/post-job.png" class="content-img">
+  				</div>
+				<p>Post A Job</p>
+			</div>
+		</div>
+
+	
+		<div class="col-sm-4">
+  			<div class="info">
+				<div class="content" data-toggle="modal" data-target="#listmodal">
+   					<img src="images/partner.png" class="content-img">
+  				</div>
+				<p>Become A Hoopars Certified partner(List a workshop)</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--....Recruit Modal .....-->
+<div class="modal fade" id="recruit">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<p id="plans">Plans</p>
+			</div>
+
+			<div class="modal-body">
+						<button class="btn btn-danger btn-lg category plan-btn">$49 for 1 month</button>
+						<button class="btn btn-warning btn-lg category plan-btn">$199 for 6 months</button>
+						<button class="btn btn-primary btn-lg category plan-btn">$499 for 1 year</button>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#searchBox">Skip</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--....Search Box Modal .....-->
+<div class="modal fade" id="searchBox">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<p id="plans">Search</p>
+			</div>
+
+			<div class="modal-body">
+				<div class="btn-group">
+				    <button type="button" class="btn btn-info dropdown-toggle category" data-toggle="dropdown">
+				    Category <span class="caret"></span></button>
+				    <ul class="dropdown-menu" role="menu">
+				      <li><a href="#">Musicians</a></li>
+				      <li><a href="#">Dancers</a></li>
+				      <li><a href="#">Models</a></li>
+				    </ul>
+  				</div>
+  				<input class="form-control input-lg" id="search" placeholder="Normal Search..." type="text">
+  				<input class="form-control input-lg" id="search" placeholder="Advanced Search..." type="text">
+
+						
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning btn-category" data-dismiss="modal" data-toggle="modal" data-target="#recruit">Back</button>
+				<button class="btn btn-primary btn-category" data-dismiss="modal" data-toggle="modal" data-target="#">Recruit</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--....Post Job Plans Modal .....-->
+<div class="modal fade" id="post-job-plans">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<p id="plans">Plans</p>
+			</div>
+
+			<div class="modal-body">
+						<button class="btn btn-danger btn-lg category plan-btn">$49 for 1 month</button>
+						<button class="btn btn-warning btn-lg category plan-btn">$199 for 6 months</button>
+						<button class="btn btn-primary btn-lg category plan-btn">$499 for 1 year</button>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#job-form">Skip</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--....Job Form .....-->
+<div class="modal fade" id="job-form">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3><b>Company Details</b></h3>
+
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<label>Profile Photo:    <button class="btn btn-default upload">Choose File</button></label><hr>
+					</div>
+					<div class="form-group">
+						<label>Background Photo:   <button class="btn btn-default upload">Choose File</button></label><hr>
+					</div>
+
+					<label>Category Mode : </label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Category <span class="caret"></span></button>
+					  	<ul class="dropdown-menu">
+					    	<li><a class="dropdown-item" href="#">Dance</a></li>
+					    	<li><a class="dropdown-item" href="#">Music</a></li>
+					    	<li><a class="dropdown-item" href="#">Modelling</a></li>
+					  	</ul>
+					</div>
+					<hr>
+  					<div class="form-group">
+  						<label>Name</label>
+  						<input type="text" class="form-control" placeholder="Enter Name"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Company Name</label>
+  						<input type="text" class="form-control" placeholder="Enter Company Name"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Street Address</label>
+  						<input type="text" class="form-control" placeholder="Enter Street Address"><hr>
+					</div>
+					<div class="form-group">
+  						<label>City </label>
+  						<input type="text" class="form-control" placeholder="Enter City"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Description</label>
+  						<input type="text" class="form-control" placeholder="Enter Description"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Requirements</label>
+  						<input type="text" class="form-control" placeholder="Enter Requirements"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Tag</label>
+  						<input type="text" class="form-control" placeholder="Add Tag"><hr>
+					</div>
+					<label>Profile : </label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Profile <span class="caret"></span></button>
+					  	<ul class="dropdown-menu">
+					    	<li><a class="dropdown-item" href="#">Profile 1</a></li>
+					    	<li><a class="dropdown-item" href="#">Profile 2</a></li>
+					    	<li><a class="dropdown-item" href="#">Profile 3</a></li>
+					  	</ul>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning " data-dismiss="modal" data-toggle="modal" data-target="#post-job-plans">
+				Back</button>
+				<button class="btn btn-primary " data-dismiss="modal" data-toggle="modal" data-target="#">
+				Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--.......List Modal.........-->
+<div class="modal fade" id="listmodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>What you want to Add ?</h3>
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					<button class="btn btn-success back" data-dismiss="modal" data-toggle="modal" data-target="#addworkshop">
+						Workshop</button>
+					<button class="btn btn-primary " data-dismiss="modal" data-toggle="modal" data-target="#addcompetition">		Competition</button>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<!--....Add Workshop Form .....-->
+<div class="modal fade" id="addworkshop">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3><b>Add Workshop</b></h3>
+
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<label>Profile Photo:    <button class="btn btn-default upload">Choose File</button></label><hr>
+					</div>
+					<div class="form-group">
+						<label>Background Photo:   <button class="btn btn-default upload">Choose File</button></label><hr>
+					</div>
+
+					<label>Category Mode : </label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Category <span class="caret"></span></button>
+					  	<ul class="dropdown-menu">
+					    	<li><a class="dropdown-item" href="#">Dance</a></li>
+					    	<li><a class="dropdown-item" href="#">Music</a></li>
+					    	<li><a class="dropdown-item" href="#">Modelling</a></li>
+					  	</ul>
+					</div>
+					<hr>
+
+  					<div class="form-group">
+  						<label>Name</label>
+  						<input type="text" class="form-control" placeholder="Enter Name"><hr>
+					</div>
+
+					<div class="form-group">
+  						<label>Street Address</label>
+  						<input type="text" class="form-control" placeholder="Enter Street Address"><hr>
+					</div>
+
+					<div class="form-group">
+  						<label>City </label>
+  						<input type="text" class="form-control" placeholder="Enter City"><hr>
+					</div>
+
+					<label>Start Time </label>
+					<div class="form-group">
+  						<input type="date" class="form-control" placeholder="Enter Date">
+					</div>
+					<div class="form-group">
+  						<input type="time" class="form-control" placeholder="Enter Time"><hr>
+					</div>
+
+					<label>End Time </label>
+					<div class="form-group">
+  						<input type="date" class="form-control" placeholder="Enter Date">
+					</div>
+					<div class="form-group">
+  						<input type="time" class="form-control" placeholder="Enter Time"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Description</label>
+  						<input type="text" class="form-control" placeholder="Enter Description"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Tag</label>
+  						<input type="text" class="form-control" placeholder="Add Tag"><hr>
+					</div>
+					<label>Corporate Profile : </label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Profile <span class="caret"></span></button>
+					  	<ul class="dropdown-menu">
+					    	<li><a class="dropdown-item" href="#">Profile 1</a></li>
+					    	<li><a class="dropdown-item" href="#">Profile 2</a></li>
+					    	<li><a class="dropdown-item" href="#">Profile 3</a></li>
+					  	</ul>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning " data-dismiss="modal" data-toggle="modal" data-target="#listmodal">
+				Back</button>
+				<button class="btn btn-primary " data-dismiss="modal" data-toggle="modal" data-target="#">
+				Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--....Add Competition Form .....-->
+<div class="modal fade" id="addcompetition">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3><b>Add Competition</b></h3>
+
+			</div>
+
+			<div class="modal-body">
+				<form role="form">
+					<div class="form-group">
+						<label>Profile Photo:    <button class="btn btn-default upload">Choose File</button></label><hr>
+					</div>
+					<div class="form-group">
+						<label>Background Photo:   <button class="btn btn-default upload">Choose File</button></label><hr>
+					</div>
+
+					<label>Category Mode : </label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Category <span class="caret"></span></button>
+					  	<ul class="dropdown-menu">
+					    	<li><a class="dropdown-item" href="#">Dance</a></li>
+					    	<li><a class="dropdown-item" href="#">Music</a></li>
+					    	<li><a class="dropdown-item" href="#">Modelling</a></li>
+					  	</ul>
+					</div>
+					<hr>
+
+  					<div class="form-group">
+  						<label>Name</label>
+  						<input type="text" class="form-control" placeholder="Enter Name"><hr>
+					</div>
+
+					<div class="form-group">
+  						<label>Street Address</label>
+  						<input type="text" class="form-control" placeholder="Enter Street Address"><hr>
+					</div>
+
+					<div class="form-group">
+  						<label>City </label>
+  						<input type="text" class="form-control" placeholder="Enter City"><hr>
+					</div>
+
+					<label>Start Time </label>
+					<div class="form-group">
+  						<input type="date" class="form-control" placeholder="Enter Date">
+					</div>
+					<div class="form-group">
+  						<input type="time" class="form-control" placeholder="Enter Time"><hr>
+					</div>
+
+					<label>End Time </label>
+					<div class="form-group">
+  						<input type="date" class="form-control" placeholder="Enter Date">
+					</div>
+					<div class="form-group">
+  						<input type="time" class="form-control" placeholder="Enter Time"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Description</label>
+  						<input type="text" class="form-control" placeholder="Enter Description"><hr>
+					</div>
+					<div class="form-group">
+  						<label>Tag</label>
+  						<input type="text" class="form-control" placeholder="Add Tag"><hr>
+					</div>
+					<label>Corporate Profile : </label>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Profile <span class="caret"></span></button>
+					  	<ul class="dropdown-menu">
+					    	<li><a class="dropdown-item" href="#">Profile 1</a></li>
+					    	<li><a class="dropdown-item" href="#">Profile 2</a></li>
+					    	<li><a class="dropdown-item" href="#">Profile 3</a></li>
+					  	</ul>
+					</div>
+				</form>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-warning " data-dismiss="modal" data-toggle="modal" data-target="#listmodal">
+				Back</button>
+				<button class="btn btn-primary " data-dismiss="modal" data-toggle="modal" data-target="#">
+				Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+<div class="row">
+	<div class="post-wraper">
+		<div class="col-sm-8 space">
+			<img src="images/inceptum.png" class="compy-pic">
+			<p class="position">Inceptum Pvt. Limited</p>
+			<div class="posted-content">
+			<img src="images/inceptum-back.png" class="dp-2">
+			<p class="post-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy<span class="more"><a href="">view more...</a></span></p>
+			</div>
+			
+		</div>
+		<div class="col-sm-8 space">
+			<img src="images/Heroku.png" class="compy-pic">
+			<p class="position">Heroku Pvt. Limited</p>
+			<div class="posted-content">
+			<img src="images/heroku-back.png" class="dp-2">
+			<p class="post-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy<span class="more"><a href="">view more...</a></span></p>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+<footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a href="#">About</a>
+          
+          <a href="#">Contact Us</a>
+          
+          <a href="#">Our Partners</a>
+        
+        </p>
+        
+      </div>
+
+    </footer>
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main-script.js"></script>
+    
+</body>
+
+</html>
+    
